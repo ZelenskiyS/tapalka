@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tapalka Game</title>
+    <style>
+        .button {
+            width: 200px;
+            height: 200px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin: 0 auto;
+            display: block;
+            border-radius: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 50px;">
+        <button class="button" id="tapButton">Tap me!</button>
+        <p>Score: <span id="score">0</span></p>
+    </div>
+
+    <script>
+        let score = 0;
+        document.getElementById("tapButton").onclick = function() {
+            score++;
+            document.getElementById("score").innerText = score;
+        };
+    </script>
+</body>
+</html>
